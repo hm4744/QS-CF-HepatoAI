@@ -6,7 +6,6 @@ QS|CF–HepatoAI Platform
 <p>
 
 
-
 </tr>
 </table>
 
