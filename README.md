@@ -1,6 +1,6 @@
 
 <h1>
-<img src="hepatoai_icon.png" width="55" align="center">
+<img src="hepatoai_icon.png.png" width="55" align="center">
 QS|CF–HepatoAI Platform
 </h1>
 
