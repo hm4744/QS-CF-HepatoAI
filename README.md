@@ -1,48 +1,92 @@
-# QS|CF-HepatoAI platform
-# What is __HepatoAI__ ?
+# QS|CF–HepatoAI Platform
 
-HepatoAI is a lightweight electroanalytical decision-support platform developed to translate experimentally derived calibration relationships of the QS|CF microsensor into a deployable digital diagnostic interface. The system enables rapid interpretation of electrochemical signals for therapeutic drug monitoring of hepatotoxic drugs including acetaminophen and diclofenac.
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Android-blue)
+![Language](https://img.shields.io/badge/code-HTML%20CSS%20JavaScript-orange)
+![Status](https://img.shields.io/badge/status-Research%20Prototype-purple)
+![Version](https://img.shields.io/badge/version-v1.0-brightgreen)
 
-The platform converts chronoamperometric current responses into clinically interpretable outputs through embedded calibration equations, enabling real-time drug concentration estimation and classification into therapeutic, low, or elevated ranges.
+
+
+## What is HepatoAI?
+
+**HepatoAI** is a lightweight electroanalytical decision-support platform developed to translate experimentally derived calibration relationships of the QS|CF microsensor into a deployable digital diagnostic interface. The platform enables rapid interpretation of electrochemical signals for therapeutic drug monitoring of hepatotoxic drugs including **acetaminophen (APAP)** and **diclofenac (DCF)**.
+
+HepatoAI converts chronoamperometric current responses obtained from the QS|CF microsensor into **quantitative drug concentrations and clinically interpretable outputs**. By embedding experimentally validated calibration equations within a computational framework, the platform provides **real-time concentration estimation and classification into therapeutic, low, or elevated ranges**, enabling rapid analytical interpretation without manual post-processing.
 
 ---
 
-## Key Features
+# Key Features
 
 • Real-time electrochemical signal interpretation  
 • Automated conversion of current (µA) to drug concentration (µM)  
 • Clinically interpretable outputs (therapeutic / low / elevated)  
 • Lightweight smartphone-compatible analytical interface  
+• Deterministic analytical engine based on experimental calibration  
 • AI-assisted prompt-to-code development workflow  
 
 ---
 
-## Analytical Framework
+# Analytical Framework
 
-HepatoAI operates using experimentally derived calibration relationships obtained from QS|CF microsensor chronoamperometric measurements in diluted serum environments.
+HepatoAI operates using experimentally derived calibration relationships obtained from **chronoamperometric measurements of the QS|CF microsensor in diluted serum environments**.
 
-Acetaminophen calibration:
-
+### Acetaminophen (APAP)
 I = 0.05973C + 0.2934
 
-Diclofenac calibration:
-
+### Diclofenac (DCF)
 I = 0.00467C + 0.23693
 
-Where  
+Where:
 
-I = measured current (µA)  
-C = analyte concentration (µM)
+- **I** = measured current (µA)  
+- **C** = analyte concentration (µM)
 
-The application calculates concentration using inverse transformation:
-
+The application determines concentration using the inverse calibration transformation:
 C = (I − b) / m
 
-This deterministic computation eliminates the need for runtime regression fitting and ensures full consistency with laboratory calibration.
+
+This deterministic computation removes the need for runtime regression fitting and ensures full consistency with the **experimentally validated electroanalytical calibration model**.
 
 ---
 
-## Live Prototype
+# Development Workflow
+
+HepatoAI was developed through an **AI-assisted iterative prototyping workflow** in which the electroanalytical logic of the QS|CF sensing platform was progressively translated into executable software architecture.
+The development process involved successive **prompt–refinement cycles using ChatGPT**, where sensing logic, calibration equations, and analytical computation were systematically converted into modular code segments. These modules were integrated to construct the final application using **HTML, CSS, and JavaScript**.
+Interface prototyping, debugging, and real-time logic testing were performed using **CodePen**, allowing rapid validation of signal input handling, concentration calculation, and clinical classification logic prior to deployment.
+The finalized codebase was subsequently packaged into a **smartphone-installable application format**, enabling portable diagnostic deployment and real-time analytical interpretation.
+
+---
+
+# Installation (Android App)
+
+A **smartphone-installable version of HepatoAI** is available for portable use.
+
+Download APK:
+
+[Google Drive link]
+
+### Installation Steps
+
+1. Download the HepatoAI APK file  
+2. Enable **"Install from Unknown Sources"** on Android devices  
+3. Install the application  
+4. Launch HepatoAI and input measured current values from the QS|CF microsensor  
+
+---
+
+# Usage
+
+1. Record chronoamperometric current using the **QS|CF microsensor**
+2. Input the measured current value into HepatoAI
+3. Select the analyte (APAP or DCF)
+4. HepatoAI automatically calculates concentration
+5. The platform provides **clinically interpretable output classification**
+
+---
+
+# Live Prototype
 
 Interactive prototype available on CodePen:
 
@@ -50,39 +94,47 @@ https://codepen.io/Aashik-Mohammed/pen/ZYONpvr
 
 ---
 
-## Installation (Android App)
+# Interface Preview
 
-A smartphone-installable version of HepatoAI is available.
-
-Download APK:
-
-[Google Drive link here]
-
-Installation:
-
-1. Download the APK file
-2. Enable "Install from unknown sources" on Android
-3. Install HepatoAI application
-4. Launch the app and input measured current
+![HepatoAI Interface](interface.png)
 
 ---
 
-## Usage
-
-1. Record chronoamperometric current using QS|CF microsensor  
-2. Input current value into HepatoAI  
-3. Select analyte (APAP or DCF)  
-4. Application calculates concentration  
-5. HepatoAI provides clinical classification  
+# Repository Structure
 
 ---
 
-## Development Workflow
+# Code Availability
 
-HepatoAI was developed through an AI-assisted iterative prototyping workflow. Analytical logic and computational structure were progressively translated into executable code through prompt-guided refinement using ChatGPT.
+The source code for the **HepatoAI digital diagnostic platform** is openly available to support transparency, reproducibility, and further development of electrochemical sensing software tools.
 
-Interface prototyping and real-time debugging were conducted using CodePen prior to deployment. The finalized application was subsequently packaged into a smartphone-installable format for portable diagnostic use.
+GitHub Repository  
+https://github.com/hm4744/QS-CF-HepatoAI
+
+Live Prototype (CodePen)  
+https://codepen.io/Aashik-Mohammed/pen/ZYONpvr
+
+The repository contains the complete implementation of the HepatoAI analytical engine including the **HTML interface, CSS styling framework, and JavaScript-based computational logic** used for electroanalytical signal interpretation.
 
 ---
 
-## Repository Structure
+# Citation
+
+If you use HepatoAI or its analytical framework in your research, please cite the associated publication describing the **QS|CF microsensor platform and HepatoAI diagnostic interface**.
+
+---
+
+# License
+
+This project is distributed under the open-source license included in this repository.
+
+---
+
+# Contact
+
+For research collaboration or technical inquiries:
+
+Mohammed Hefayathullah - SRMIST KTR  
+Electrochemical Biosensor Researcher | AI-driven digital tools for Healthcare  
+
+
