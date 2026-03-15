@@ -139,7 +139,9 @@ This project is distributed under the open-source license included in this repos
 For research collaboration or technical inquiries:
 
 Mohammed Hefayathullah
-Materials Electrochemistry Laboratory, SRMIST-KTR, India 
-hm4744@srmist.edu.in 
+
+Materials Electrochemistry Laboratory, SRMIST-KTR, India
+
+Email: hm4744@srmist.edu.in 
 
 
