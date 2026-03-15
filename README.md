@@ -1,4 +1,36 @@
+<table width="100%">
+<tr>
+<td width="80%">
 
+<h1>
+<img src="hepatoai_icon.png" width="55" align="center">
+QS|CF–HepatoAI Platform
+</h1>
+
+<p>
+Electrochemical Biosensing Research Group <br>
+SRM Institute of Science and Technology (SRMIST), India
+</p>
+
+</td>
+
+<td width="20%" align="right">
+<img src="srm_logo.png" width="120">
+</td>
+
+</tr>
+</table>
+
+<p align="center">
+
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Android-blue)
+![Language](https://img.shields.io/badge/code-HTML%20CSS%20JavaScript-orange)
+![Status](https://img.shields.io/badge/status-Research%20Prototype-purple)
+![Version](https://img.shields.io/badge/version-v1.0-brightgreen)
+![Institution](https://img.shields.io/badge/institution-SRMIST-red)
+
+</p>
 
 ## What is HepatoAI?
 
