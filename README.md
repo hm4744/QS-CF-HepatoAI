@@ -118,9 +118,6 @@ The source code for the **HepatoAI digital diagnostic platform** is openly avail
 GitHub Repository  
 https://github.com/hm4744/QS-CF-HepatoAI
 
-Live Prototype (CodePen)  
-https://codepen.io/Aashik-Mohammed/pen/ZYONpvr
-
 The repository contains the complete implementation of the HepatoAI analytical engine including the **HTML interface, CSS styling framework, and JavaScript-based computational logic** used for electroanalytical signal interpretation.
 
 ---
