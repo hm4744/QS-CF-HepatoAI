@@ -1,7 +1,9 @@
 
 <h1>
 <img src="hepatoai_icon.png.png" width="55" align="center">
-QS|CF–HepatoAI Platform
+QS|CF–HepatoAI Platform    <td width="20%" align="right">
+<img src="srm_logo.png" width="120">
+</td>
 </h1>
 
 <p>
