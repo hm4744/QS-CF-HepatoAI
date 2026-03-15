@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>QS|CF-HepatoAI</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QS|CF Microsensor Clinical App</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>QS|CF Microsensor Clinical Decision App</h1>
+
+    <!-- SENSOR INFO PANEL -->
+    <div class="panel">
+        <h2>Sensor Information</h2>
+        <select id="drugSelect">
+            <option value="acetaminophen">Acetaminophen</option>
+            <option value="diclofenac">Diclofenac</option>
+        </select>
+
+        <p><strong>Technique:</strong> Chronoamperometry (i–t)</p>
+        <p><strong>Slope:</strong> <span id="slopeDisplay"></span></p>
+        <p><strong>Intercept:</strong> <span id="interceptDisplay"></span></p>
+    </div>
+
+    <!-- REAL-TIME INPUT -->
+    <div class="panel">
+        <h2>Real-Time Signal Input</h2>
+        <input type="number" id="currentInput" placeholder="Enter Current (μA)">
+        <button onclick="calculateConcentration()">Calculate</button>
+
+        <h3>Calculated Concentration:</h3>
+        <p id="concentrationOutput">-- μg/mL</p>
+    </div>
+
+    <!-- CLINICAL OUTPUT -->
+    <div class="panel">
+        <h2>Clinical Interpretation</h2>
+        <div id="statusBox" class="status neutral">Awaiting Input</div>
+        <p id="interpretationText"></p>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="panel">
+        <button onclick="saveData()">Save Reading</button>
+        <button onclick="aiExplanation()">AI Explanation</button>
+    </div>
+
+    <!-- GRAPH -->
+    <div class="panel">
+        <canvas id="chartCanvas"></canvas>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
