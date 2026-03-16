@@ -142,6 +142,6 @@ Mohammed Hefayathullah
 
 Materials Electrochemistry Laboratory, SRMIST-KTR, India
 
-Email: hm4744@srmist.edu.in 
+Email: hm4744@srmist.edu.in [Google scholar](https://scholar.google.com/citations?user=kK1wknAAAAAJ&hl=en)
 
 
