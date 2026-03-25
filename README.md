@@ -93,7 +93,7 @@ Download APK:
 The integrated operational workflow of the **QS|CF–HepatoAI platform** is illustrated below, demonstrating the seamless coupling of electrochemical sensing, signal acquisition, and real-time clinical decision support.
 
 <p align="center">
-  <img src="workflow.png" width="950">
+  <img src="workflow.png" width="100%" style="max-width:1000px;">
 </p>
 
 ### Operational Workflow
